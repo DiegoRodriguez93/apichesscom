@@ -27,6 +27,9 @@ var chessAPI = new ChessWebAPI();
         console.error(err.statusCode);
     });
  */
+app.get('/',function(req, res){
+    res.send('todo andando ok');
+});
 
 app.post('/chesscomplayer', function (req, res) {
 
